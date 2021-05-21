@@ -1,0 +1,35 @@
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The Game of Life</title>
+    <meta name="description" content="Life, The game of life">
+    <meta name="author" content="Kamil Grodzki">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<br onresize="onResize()">
+    <div class="container">
+        <div class = "canvas-container" id="canvas-container">
+            <canvas id="c1" width="500" height="500"></canvas>
+        </div>
+    
+        <br />
+    
+        <div class = "inputs-container">
+            <input type="button" id="BUTstart" value=" START " onclick="FStartStop()" />
+            <input type="range" id="zip" min="10" max="50" onchange="ZIP_change()" />
+            <input type="text" id="zip_TXT" size="6" onchange="ZIP_change()" />
+        </div>
+    </div>
+    
+
+    <script src="life.js"></script>
+</body>
+
+</html>
